@@ -9,4 +9,6 @@ check_language(CUDA)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(fcnn main.cu)
+set(CMAKE_CUDA_STANDARD 20)
+
+add_executable(fcnn main.cu operation.hpp tensor.hpp backend.h)
